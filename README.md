@@ -32,7 +32,6 @@ The company aims to use these data-driven insights to inform decisions regarding
 - Track sick leave percent to aid better health initiative planning like flu shots, improved sanitization
 
 
-
 ## Project Steps
 
 ### Data Exploration
@@ -153,13 +152,10 @@ A dashboard was developed to help visualize key parameters relevant to attendanc
 The Attendance Dashboard is presented below:
 
 ****
-&nbsp;
 
 ![Dashboard](https://github.com/Jucodez/Real-Life-HR-Data-Analysis-Project/assets/102746691/ddb93135-04fb-43c0-88f8-6866f9fa6304)
 
 ****
-\
-&nbsp;
 
 This dashboard was published online for easy access by company management staff.
 
