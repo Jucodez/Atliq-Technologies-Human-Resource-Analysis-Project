@@ -79,13 +79,29 @@ Also, a data key was provided to help make sense of the abbreviations. This key 
 - A Year column was added to the date table to extract the weekday for each date entry
 
       Year = FORMAT('Dates'[Date], "yyyy")
+- A Day Number column was added and used to order the days of the week by calendar order. The column was created using the formula below
+
+      Day Number = SWITCH(format('Dates'[Date],"dddd"),    
+          "Sunday",1,
+          "Monday",2,
+          "Tuesday",3,
+          "Wednesday",4,
+          "Thursday",5,
+          "Friday",6,
+          "Saturday",7,
+          BLANK())
+
+The date table is presented below.
+
+![date table](https://github.com/Jucodez/Atliq-Technologies-Human-Resource-Analysis-Project/assets/102746691/edf4cecd-0d2b-4312-b5d0-bef5ed7571a6)
 
 ### Data modeling
 
 A many-to-one relationship was created between the Date column in the Attendance Data table and the Date column in the Date table. This relationship was made active and given a single cross-filter direction from the Date table to the Attendance Data table.
 
 
-![Data Model](https://github.com/Jucodez/Real-Life-HR-Data-Analysis-Project/assets/102746691/c096386d-870d-44d2-916f-b3aec0f4247a)
+![Data model](https://github.com/Jucodez/Atliq-Technologies-Human-Resource-Analysis-Project/assets/102746691/da3d39fb-b3ad-4f61-af2f-087c2a8188a9)
+
 
 
 ### Measures
@@ -153,7 +169,7 @@ The Attendance Dashboard is presented below:
 
 ****
 
-![Dashboard](https://github.com/Jucodez/Real-Life-HR-Data-Analysis-Project/assets/102746691/ddb93135-04fb-43c0-88f8-6866f9fa6304)
+![Dashboard](https://github.com/Jucodez/Atliq-Technologies-Human-Resource-Analysis-Project/assets/102746691/c44e1edc-ef2b-4b9c-a8c0-81b50633f754)
 
 ****
 
@@ -163,7 +179,7 @@ This dashboard was published online for easy access by company management staff.
 ### Key Insights / Data-Driven Strategy
 1. Attendance Trend Analysis: 
 
-      ![Attendance Trend Analysis](https://github.com/Jucodez/Real-Life-HR-Data-Analysis-Project/assets/102746691/e5ddf7f7-b618-4cb4-ab73-3db747744be4)
+      ![Attendance %](https://github.com/Jucodez/Atliq-Technologies-Human-Resource-Analysis-Project/assets/102746691/b56ba61e-de88-4ad9-8b4e-c7422dd77e95)
 
 A downward trend in attendance was observed. This might be a seasonal thing so collecting more data might help to identify more patterns and improve decision making. A better understanding of attendance trends can help the company identify the amount of projects it can take on during certain seasons if seasonal patterns are identified. 
 
@@ -171,26 +187,26 @@ A downward trend in attendance was observed. This might be a seasonal thing so c
 
 2. Work From Home (WFH) Trend Analysis: 
 
-      ![WFH Trend Analysis](https://github.com/Jucodez/Real-Life-HR-Data-Analysis-Project/assets/102746691/fcfc3dfa-c2c6-45e0-af6a-6ece115e3f85)
+      ![WFH%](https://github.com/Jucodez/Atliq-Technologies-Human-Resource-Analysis-Project/assets/102746691/dc5cdb09-9527-43be-9d85-9699daa3bb05)
 
 An upward trend in WFH was observed this might be due to an increasing cultural shift towards remote jobs. Necessary cost-saving practices have to be undertaken regarding office resources to account for the gradual reduction in employees Utilizing the office space.
 
 3. Sick Leave (SL) Trend Analysis: 
 
-      ![SL Trend Analysis](https://github.com/Jucodez/Real-Life-HR-Data-Analysis-Project/assets/102746691/0c60be85-2cc9-48ba-8bf5-862fe1f9cff2)
+      ![SL%](https://github.com/Jucodez/Atliq-Technologies-Human-Resource-Analysis-Project/assets/102746691/7d256aab-9598-4eef-badd-3c8e31f2fb3f)
 
 An upward trend in SL was observed. This might be a seasonal thing, so more data is needed for better decision-making. However, it might indicate falling sanitation and hygiene standards in the office, and this has to be looked into. Flu shots might be recommended for employees.
 
 4. Weekday Attendance %: 
 
-      ![weekdays attendance](https://github.com/Jucodez/Real-Life-HR-Data-Analysis-Project/assets/102746691/ea828b56-6e70-41c7-af46-18e76c4fe1cc)
+      ![Attendance table](https://github.com/Jucodez/Atliq-Technologies-Human-Resource-Analysis-Project/assets/102746691/bfc2f292-a59a-432a-a0e1-ba5b8945fea6)
 
 
 Monday had the highest attendance % (94%), while Friday had the lowest (91%). This can help plan tasks and workload. The company might decide to get more done on days when more people are available and reduce the workload on days when fewer people are available.
 
 5. Weekday WFH %: 
 
-      ![weekdays WFH](https://github.com/Jucodez/Real-Life-HR-Data-Analysis-Project/assets/102746691/b56012cd-baf0-4987-85f4-b9e621fb8793)
+      ![WFH Table](https://github.com/Jucodez/Atliq-Technologies-Human-Resource-Analysis-Project/assets/102746691/7899a1ea-5697-4add-888f-588f256ea2bc)
 
 Friday and Thursday had the highest WFH %( 12.9 and 11.4%), while the other days were considerably less, all being less than 9%. This might help inform a more structured hybrid work format where employees can work from home on Fridays and Thursdays but have to come to the office Monday through Wednesday. This insight can also aid office resource planning in the meantime to save costs.
 
