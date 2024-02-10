@@ -169,7 +169,7 @@ The Attendance Dashboard is presented below:
 
 ****
 
-![Dashboard](https://github.com/Jucodez/Atliq-Technologies-Human-Resource-Analysis-Project/assets/102746691/c44e1edc-ef2b-4b9c-a8c0-81b50633f754)
+![Atliq](https://github.com/Jucodez/Atliq-Technologies-Human-Resource-Analysis-Project/assets/102746691/18abb26f-8495-4fd7-9a5e-033e242cfe76)
 
 ****
 
